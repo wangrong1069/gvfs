@@ -25,7 +25,7 @@ endif
 
 # i386 is not a full architecture, especially on Ubuntu
 ifeq (i386, $(DEB_HOST_ARCH))
-        GOA_BACKEND = -Dafc=false -Dgoa=false -Dgoogle=false -Donedrive=false
+        GOA_BACKEND = -Dafc=false -Dgoa=false -Donedrive=false
 endif
 
 ifeq ($(shell dpkg-vendor --query vendor),Ubuntu)

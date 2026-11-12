@@ -47,14 +47,11 @@ if enable_devel_utils
     'benchmark-posix-big-files',
     'benchmark-posix-small-files',
     'test-query-info-stream',
-    'google'
   ]
 
   deps = [
     gio_dep,
     glib_dep,
-    libgdata_dep,
-    goa_dep
   ]
 
   foreach test: tests
@@ -66,4 +63,14 @@ if enable_devel_utils
       dependencies: deps,
     )
   endforeach
+
+  if enable_google
+    executable(
+      'google',
+      'google.c',
+      c_args: ['-DG_LOG_DOMAIN="google"'],
+      include_directories: top_inc,
+      dependencies: deps + [libgdata_dep, goa_dep],
+    )
+  endif
 endif

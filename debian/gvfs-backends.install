@@ -12,7 +12,6 @@ usr/libexec/gvfsd-cdda						[!hurd-any]
 usr/libexec/gvfsd-dav
 usr/libexec/gvfsd-dnssd
 usr/libexec/gvfsd-ftp
-usr/libexec/gvfsd-google					[!i386]
 usr/libexec/gvfsd-gphoto2					[!hurd-any]
 usr/libexec/gvfsd-http
 usr/libexec/gvfsd-mtp						[!hurd-any]
@@ -44,7 +43,6 @@ usr/share/gvfs/mounts/dns-sd.mount
 usr/share/gvfs/mounts/ftp.mount
 usr/share/gvfs/mounts/ftpis.mount
 usr/share/gvfs/mounts/ftps.mount
-usr/share/gvfs/mounts/google.mount				[!i386]
 usr/share/gvfs/mounts/gphoto2.mount				[!hurd-any]
 usr/share/gvfs/mounts/http.mount
 usr/share/gvfs/mounts/mtp.mount					[!hurd-any]
